@@ -128,9 +128,22 @@ namespace Exercises.Level1
         /// sortaSum(10, 11) → 21
         /// </summary>
         public int SortaSum(int a, int b)
+         
         {
-            throw new NotImplementedException();
-        }
+            int Sum = a + b;
+
+            if (Sum < 10)
+            {
+                return a + b;
+            }
+
+            if (Sum >= 19)
+            {
+                return a + b;
+            }
+
+            return 20;
+        } 
 
         /// <summary>
         /// Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean

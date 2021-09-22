@@ -69,7 +69,18 @@ namespace Exercises.Level1
         /// </summary>
         public bool SquirrelPlay(int temp, bool isSummer)
         {
-            throw new NotImplementedException();
+            int maxTemp = 90;
+
+            if (isSummer)
+            {
+                maxTemp = maxTemp + 10;
+            }
+
+            if (temp >= 60 && temp <= maxTemp)
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -85,7 +96,27 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-            throw new NotImplementedException();
+            if (speed <= 60)
+            {
+                return 0;
+            }
+
+            if (speed <= 65 && isBirthday)
+            {
+                return 0;
+            }
+
+            if (speed >= 61 && speed <= 80)
+            {
+                return 1;
+            }
+
+            if (speed >= 66 && speed <= 85 && isBirthday)
+            {
+                return 1;
+            }
+
+            return 2;
         }
 
         /// <summary>

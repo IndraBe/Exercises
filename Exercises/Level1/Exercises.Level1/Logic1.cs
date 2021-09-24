@@ -158,7 +158,24 @@ namespace Exercises.Level1
         /// </summary>
         public string AlarmClock(int day, bool vacation)
         {
-            throw new NotImplementedException();
+            bool weekend = day == 0 || day == 6;
+
+            if (weekend && vacation)
+            {
+                return "off";
+            }
+
+            if (vacation)
+            {
+                return "10:00";
+            }
+
+            if (weekend)
+            {
+                return "10:00";
+            }
+
+            return "7:00";
         }
 
         /// <summary>
@@ -172,7 +189,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            bool eitherNumber = a == 6 || b == 6;
+            bool sumNumber = a + b == 6;
+            bool differenceNumber = a - b == 6 || b - a == 6;
+            
+            if (eitherNumber || sumNumber || differenceNumber)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>

@@ -212,7 +212,20 @@ namespace Exercises.Level1
         /// </summary>
         public bool In1To10(int n, bool outsideMode)
         {
-            throw new NotImplementedException();
+            bool range = n >= 1 && n <= 10;
+            bool range2 = n <= 1 || n >= 10;
+
+            if (!outsideMode && range)
+            {
+                return true;
+            }
+
+            if (outsideMode && range2)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>

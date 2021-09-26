@@ -261,8 +261,8 @@ namespace Exercises.Level1
         public bool More20(int n)
         {
             int n2 = 20;
-            bool division = n % n2 == 1;
-            bool division2 = n % n2 == 2;
+            bool division = Math.Abs(n) % n2 == 1;
+            bool division2 = Math.Abs(n) % n2 == 2;
 
             if (division || division2)
             {
@@ -282,7 +282,19 @@ namespace Exercises.Level1
         /// </summary>
         public bool Old35(int n)
         {
-            throw new NotImplementedException();
+            int n2 = 3;
+            
+            int n3 = 5;
+
+            bool division = Math.Abs(n) % n2 == 0 || Math.Abs(n) % n3 == 0;
+            bool division2 = Math.Abs(n) % n2 != 0 || Math.Abs(n) % n3 != 0;
+
+            if (division && division2)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>

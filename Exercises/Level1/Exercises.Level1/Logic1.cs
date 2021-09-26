@@ -238,7 +238,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool SpecialEleven(int n)
         {
-            throw new NotImplementedException();
+            int n2 = 11;
+            bool division = n % n2 == 0;
+            bool division2 = n % n2 == 1;
+
+            if (division || division2)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -251,7 +260,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool More20(int n)
         {
-            throw new NotImplementedException();
+            int n2 = 20;
+            bool division = n % n2 == 1;
+            bool division2 = n % n2 == 2;
+
+            if (division || division2)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>

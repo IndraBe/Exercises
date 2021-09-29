@@ -116,7 +116,13 @@ namespace Exercises.Level1
         /// </summary>
         public int Sum3(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] array = new int[3];
+
+            int first = nums[0];
+            int second = nums[1];
+            int third = nums[2];
+
+            return first + second + third;
         }
 
         /// <summary>

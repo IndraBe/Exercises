@@ -18,7 +18,21 @@ namespace Exercises.Level1
         /// </summary>
         public bool FirstLast6(int[] nums)
         {
-            throw new NotImplementedException();
+            int first = nums[0];
+
+            int lastIndex = nums.Length - 1;
+            int last = nums[lastIndex];
+
+            //if (first == 6 || last == 6)
+            //{
+            //    return true;
+            //}
+
+            //return false;
+
+
+            return first == 6 || last == 6; //saīsināti iepriekšējam
+
         }
 
         /// <summary>
@@ -31,7 +45,21 @@ namespace Exercises.Level1
         /// </summary>
         public bool SameFirstLast(int[] nums)
         {
-            throw new NotImplementedException();
+            if (nums.Length == 0)
+            {
+                return false;
+            }
+
+            int first = nums[0]; //1. elements
+            int lastIndex = nums.Length - 1; // masīva garums ir 0
+            int last = nums[lastIndex]; // pēdējais skaitlis
+
+            if(first == last)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -41,7 +69,16 @@ namespace Exercises.Level1
         /// </summary>
         public int[] MakePi()
         {
-            throw new NotImplementedException();
+            //int[] array = new int[3];
+
+            //array[0] = 3;
+            //array[1] = 1;
+            //array[2] = 4;
+
+            //return array;
+
+            int[] array = { 3, 1, 4 };
+            return array;
         }
 
         /// <summary>
@@ -54,7 +91,20 @@ namespace Exercises.Level1
         /// </summary>
         public bool CommonEnd(int[] a, int[] b)
         {
-            throw new NotImplementedException();
+            int firstA = a[0];
+            int lastIndexA = a.Length - 1;
+            int lastA = a[lastIndexA];
+            int firstB = b[0];
+            int lastIndexB = b.Length - 1;
+            int lastB = b[lastIndexB];
+
+            if (firstA == firstB || lastA == lastB)
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         /// <summary>

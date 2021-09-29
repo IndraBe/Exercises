@@ -226,6 +226,36 @@ namespace Exercises.Level1
             }
 
             return false;
+
+
+            //if (outsideMode)
+            //{
+            //    if (n < 1 || n >= 10) return true;
+            //}
+            //else
+            //{
+            //    if (n >= 1 && n <= 10) return true;
+            //}
+            //return false;
+
+            //if (outsideMode && (n <= 1 || n >= 10))
+            //{
+            //    return true;
+            //}
+            //else if (outsideMode)
+            //{
+            //    return false;
+            //}
+            //else if (n >= 1 && n <= 10)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+
+
         }
 
         /// <summary>
@@ -308,7 +338,27 @@ namespace Exercises.Level1
         /// </summary>
         public bool Less20(int n)
         {
-            throw new NotImplementedException();
+            int n2 = 20;
+
+            //int n3 = n - 1;
+            //int n4 = n - 2;
+
+            
+            bool rez = Math.Abs(n) % n2 != 0;
+            //bool rez2 = Math.Abs(n2) % n2 != 0;
+            //bool rez3 = Math.Abs(n) % n2 != 0;
+            //bool rez2 = Math.Abs(n4) % n2 != 0;
+
+            bool rez2 = Math.Abs(n) % n2 != 1;
+            bool rez3 = Math.Abs(n) % n2 != 2;
+
+            if (rez && rez2 && rez3)
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         /// <summary>

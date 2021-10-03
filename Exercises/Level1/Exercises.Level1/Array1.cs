@@ -177,7 +177,21 @@ namespace Exercises.Level1
         /// </summary>
         public int[] MaxEnd3(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] array = new int[3];
+
+            int first = nums[0];
+            int second = nums[1];
+            int third = nums[2];
+
+            if (first > third)
+            {
+                int[] array1 = { first, first, first };
+                return array1;
+            }
+
+            int[] array2 = { third, third, third };
+            return array2; 
+            
         }
 
         /// <summary>

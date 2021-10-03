@@ -20,7 +20,7 @@ namespace Exercises.Level1
         {
             int first = nums[0];
 
-            int lastIndex = nums.Length - 1;
+            int lastIndex = nums.Length - 1;        //masīva garums -1
             int last = nums[lastIndex];
 
             //if (first == 6 || last == 6)
@@ -45,14 +45,14 @@ namespace Exercises.Level1
         /// </summary>
         public bool SameFirstLast(int[] nums)
         {
-            if (nums.Length == 0)
+            if (nums.Length == 0)           // atgriež false, ja array length ir 0
             {
                 return false;
             }
 
             int first = nums[0]; //1. elements
-            int lastIndex = nums.Length - 1; // masīva garums ir 0
-            int last = nums[lastIndex]; // pēdējais skaitlis
+            int lastIndex = nums.Length - 1; 
+            int last = nums[lastIndex]; // pēdējais elements
 
             if(first == last)
             {
@@ -94,6 +94,7 @@ namespace Exercises.Level1
             int firstA = a[0];
             int lastIndexA = a.Length - 1;
             int lastA = a[lastIndexA];
+
             int firstB = b[0];
             int lastIndexB = b.Length - 1;
             int lastB = b[lastIndexB];
@@ -135,7 +136,15 @@ namespace Exercises.Level1
         /// </summary>
         public int[] RotateLeft3(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] array = new int[3];
+
+            int first = nums[0];
+            int second = nums[1];
+            int third = nums[2];
+            
+            int[] rotarray = { second, third, first };
+            return rotarray;
+           
         }
 
         /// <summary>

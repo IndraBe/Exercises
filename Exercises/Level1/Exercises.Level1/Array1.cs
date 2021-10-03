@@ -157,7 +157,14 @@ namespace Exercises.Level1
         /// </summary>
         public int[] Reverse3(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] array = new int[3];
+
+            int first = nums[0];
+            int second = nums[1];
+            int third = nums[2];
+
+            int[] rotarray = { third, second, first };
+            return rotarray;
         }
 
         /// <summary>

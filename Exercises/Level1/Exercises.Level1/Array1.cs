@@ -231,7 +231,18 @@ namespace Exercises.Level1
         /// </summary>
         public int[] MiddleWay(int[] a, int[] b)
         {
-            throw new NotImplementedException();
+            int[] arrayA = new int[3];
+            int firstA = a[0];
+            int secondA = a[1];
+            int thirdA = a[2];
+
+            int[] arrayB = new int[3];
+            int firstB = b[0];
+            int secondB = b[1];
+            int thirdB = b[2];
+
+            int[] arrayC = { secondA, secondB };
+            return arrayC;
         }
 
         /// <summary>

@@ -272,7 +272,11 @@ namespace Exercises.Level1
         /// </summary>
         public bool Has23(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] array = new int[2];
+            int first = nums[0];
+            int second = nums[1];
+
+            return first == 2 || second == 2 || first == 3 || second == 3;
         }
 
         /// <summary>

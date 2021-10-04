@@ -180,7 +180,6 @@ namespace Exercises.Level1
             int[] array = new int[3];
 
             int first = nums[0];
-            int second = nums[1];
             int third = nums[2];
 
             if (first > third)
@@ -205,7 +204,21 @@ namespace Exercises.Level1
         /// </summary>
         public int Sum2(int[] nums)
         {
-            throw new NotImplementedException();
+
+            if (nums.Length == 0)
+            {
+                return 0;
+            }
+            
+            int first = nums[0];
+            if (nums.Length < 2)
+            {
+                return first;
+            }
+
+            int second = nums[1];
+            return first + second;
+
         }
 
         /// <summary>

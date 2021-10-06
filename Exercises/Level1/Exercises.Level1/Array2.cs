@@ -17,7 +17,18 @@ namespace Exercises.Level1
         /// </summary>
         public int CountEvens(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            foreach (int num in nums)
+            {
+                if (num % 2 == 0)
+                {
+                    sum++;
+                }
+            }
+
+            return sum;
+            
         }
 
         /// <summary>

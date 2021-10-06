@@ -42,7 +42,16 @@ namespace Exercises.Level1
         /// </summary>
         public int BigDiff(int[] nums)
         {
-            throw new NotImplementedException();
+            int min = nums[0];
+            int max = nums[0];
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                min = Math.Min(min, nums[i]);
+                max = Math.Max(max, nums[i]);
+            }
+
+            return max - min;
         }
 
         /// <summary>

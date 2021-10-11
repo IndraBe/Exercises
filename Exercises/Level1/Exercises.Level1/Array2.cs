@@ -67,7 +67,22 @@ namespace Exercises.Level1
         /// </summary>
         public int CenteredAverage(int[] nums)
         {
-            throw new NotImplementedException();
+
+            int sum = 0;
+            int min = nums[0];
+            int max = nums[0];
+           
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i];
+                min = Math.Min(min, nums[i]);
+                max = Math.Max(max, nums[i]);
+            }
+
+            sum = sum - max - min;
+            sum = sum / (nums.Length - 2);
+
+            return sum;
         }
 
         /// <summary>

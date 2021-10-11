@@ -68,21 +68,21 @@ namespace Exercises.Level1
         public int CenteredAverage(int[] nums)
         {
 
-            int avg = 0;
+            int sum = 0;
             int min = nums[0];
             int max = nums[0];
            
             for (int i = 0; i < nums.Length; i++)
             {
-                avg += nums[i];
+                sum = sum + nums[i];
                 min = Math.Min(min, nums[i]);
                 max = Math.Max(max, nums[i]);
             }
 
-            avg = avg - max - min;
-            avg = avg / (nums.Length - 2);
+            sum = sum - max - min;      //excluding max & min
+            sum = sum / (nums.Length - 2);      // array length without max & min
 
-            return avg;
+            return sum;
         }
 
         /// <summary>

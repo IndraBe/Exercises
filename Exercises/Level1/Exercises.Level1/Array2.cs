@@ -125,7 +125,26 @@ namespace Exercises.Level1
         /// </summary>
         public int Sum67(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+            //int ignnumber = 6;
+            
+            for ( int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 6)
+                {
+                    while (nums[i] != 7)
+                    {
+                        i++;
+                    }
+                }
+
+                else
+                {
+                    sum = sum + nums[i];
+                }
+            }
+
+            return sum;
         }
 
         /// <summary>

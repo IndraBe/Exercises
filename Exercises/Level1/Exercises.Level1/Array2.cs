@@ -176,7 +176,15 @@ namespace Exercises.Level1
         /// </summary>
         public bool Lucky13(int[] nums)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 1 || nums[i] == 3)
+                {
+                    return false;
+                }
+            }
+            
+            return true;
         }
 
         /// <summary>

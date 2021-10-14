@@ -196,7 +196,17 @@ namespace Exercises.Level1
         /// </summary>
         public bool Sum28(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 2)
+                {
+                    sum = sum + 2;
+                }
+            }
+
+            return sum == 8;
         }
 
         /// <summary>

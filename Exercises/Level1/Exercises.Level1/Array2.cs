@@ -268,7 +268,15 @@ namespace Exercises.Level1
         /// </summary>
         public bool Only14(int[] nums)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 1 && nums[i] != 4)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         /// <summary>

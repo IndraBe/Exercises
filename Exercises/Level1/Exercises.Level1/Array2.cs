@@ -249,7 +249,14 @@ namespace Exercises.Level1
         /// </summary>
         public int[] FizzArray(int n)
         {
-            throw new NotImplementedException();
+            int[] array = new int[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                array[i] = i;           //element same as index
+            }
+
+            return array;
         }
 
         /// <summary>
